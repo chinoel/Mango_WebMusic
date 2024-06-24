@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar-line">
+        <div class="pjt top-bar">Kyungnam University Team Project</div>
+        <button class="top-bar" id="login-btn">로그인</button>
+        <p class="user top-bar" id="user-name"></p>
+    </div>
+    <hr>
+
+    <header id="header">
+        <div class="logo" id="logo">
+            <h1>
+                <img src="../img/logo.png" alt="Mango" width="160" height="50">
+            </h1>
+        </div>
+
+        <div class="top-tier-menu">
+            <a href="javascript:void(0)" class="select-top" id="k-pop">한국 Music</a>
+            <a href="javascript:void(0)" class="select-top" id="j-pop">일본 Music</a>
+            <a href="javascript:void(0)" class="select-top" id="pop">POP Music</a>
+            <a href="https://gall.dcinside.com/mgallery/board/lists/?id=nochu" class="select-top" id="pop">커뮤니티</a>
+            <a href="https://github.com/chinoel/web_tp_kyungnam" class="select-top" id="pop">GitHub</a>
+        </div>
+    </header>
+
+
+
+
+
+    <main id="main-page">
+        <p class="left-margin">Top 순위 ></p>
+        <table class="left-margin">
+            <!-- 제일 왼쪽에 2칸 써서 이미지 한개, 다음 줄에 위에 2개, 아래 2개 이미지-->
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <div class="img-box top-1">
+                        <img src="../img/logo.png" alt="0" width="300" height="300">
+                    </div>
+                </td>
+                <td>
+                    <div class="img-box top-2">
+                        <img src="../img/logo.png" alt="0" width="150" height="150">
+                    </div>
+                </td>
+                <td>
+                    <div class="img-box top-3">
+                        <img src="../img/logo.png" alt="0" width="150" height="150">
+                    </div>
+                </td>
+                <td rowspan="2" class="readme">
+                    <h2>Korean POP Chart</h2>
+                    2024.06.01 Days
+                    <p>월간 차트 : 멜론 음악서비스의 월간 K-POP 순위입니다.<br>
+                        Monthly Chart : Monthly K-POP ranking of Melon Music Service.<br><br>
+                        순위는 1위부터 100위까지 제공됩니다.<br>
+                        Rankings are provided from 1st to 100th.
+                    </p>
+                </td>
+            </tr>
+            <td>
+                <div class="img-box top-4">
+                    <img src="../img/logo.png" alt="0" width="150" height="150">
+                </div>
+            </td>
+            <td>
+                <div class="img-box top-5">
+                    <img src="../img/logo.png" alt="0" width="150" height="150">
+                </div>
+            </td>
+        </table>
+    </main>
+
+    <div id="top100-page">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="1">
+                        순위
+                    </td>
+                    <td colspan="2">
+                        곡 제목 / 아티스트
+                    </td>
+                    <td colspan="1">
+                        재생
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="top100-list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
